@@ -1,0 +1,44 @@
+---
+title: "MyFirstRMarkdown"
+author: "Xuan Pham"
+date: "8/17/2019"
+output:
+  word_document: default
+  html_document: default
+---
+
+This is my first R markdown file! 
+
+# Step 1: Bring in data frame
+
+```{r}
+UniversalBank <- read.csv("C:/Users/Xuan Pham/Dropbox/Fall_2019/BIA6311/UniversalBank.csv")
+```
+
+## Step 2: Find out structure of data frame
+
+```{r}
+str(UniversalBank)
+```
+
+
+### Step 3: It's always important to visualize a dataframe
+
+```{r}
+hist(UniversalBank$Income)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
